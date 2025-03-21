@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida alla Gestione dei Feedback - ItaliaMaxShop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #0088cc;
+            color: white;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        
+        h2 {
+            color: #0088cc;
+            border-bottom: 2px solid #0088cc;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            color: #0088cc;
+            margin-top: 25px;
+        }
+        
+        .section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .step {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #0088cc;
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #0088cc;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .note {
+            background-color: #fff8e1;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        .button-example {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #f2f2f2;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        
+        .rating {
+            display: flex;
+            margin: 15px 0;
+        }
+        
+        .rating-positive, .rating-negative {
+            padding: 8px 16px;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+        
+        .rating-positive {
+            background-color: #e8f5e9;
+            border: 1px solid #a5d6a7;
+        }
+        
+        .rating-negative {
+            background-color: #ffebee;
+            border: 1px solid #ef9a9a;
+        }
+        
+        .feedback-example {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+        
+        .status-pending {
+            background-color: #fff8e1;
+            color: #f57c00;
+        }
+        
+        .status-approved {
+            background-color: #e8f5e9;
+            color: #388e3c;
+        }
+        
+        .status-rejected {
+            background-color: #ffebee;
+            color: #d32f2f;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guida alla Gestione dei Feedback</h1>
+        <p>Tutto ciò che devi sapere per gestire i tuoi feedback su ItaliaMaxShop</p>
+    </header>
+    
+    <div class="section">
+        <h2>Introduzione ai Feedback</h2>
+        <p>I feedback sono un elemento fondamentale della nostra community. Condividendo la tua esperienza d'acquisto, aiuti altri clienti a prendere decisioni informate e ci permetti di migliorare costantemente i nostri servizi.</p>
+        
+        <div class="note">
+            <strong>Nota:</strong> Puoi lasciare un feedback solo per prodotti che hai effettivamente acquistato e per i quali l'ordine è stato confermato.
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Come Accedere al Menu Feedback</h2>
+        <p>Per accedere alla sezione feedback, segui questi semplici passaggi:</p>
+        
+        <div class="step">
+            <span class="step-number">1</span> Apri la chat con il nostro bot su Telegram
+        </div>
+        
+        <div class="step">
+            <span class="step-number">2</span> Nel menu principale, cerca e seleziona il pulsante <span class="button-example">🌟 Feedback</span>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">3</span> Verrai indirizzato al menu feedback, dove potrai scegliere tra diverse opzioni:
+            <ul>
+                <li><span class="button-example">📝 Lascia un Feedback</span> - Per lasciare un nuovo feedback</li>
+                <li><span class="button-example">👀 Vedi tutti i Feedback</span> - Per visualizzare i feedback di altri clienti</li>
+                <li><span class="button-example">🔙 Menu Principale</span> - Per tornare al menu principale</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Come Lasciare un Feedback</h2>
+        <p>Lasciare un feedback è semplice e veloce. Ecco come fare:</p>
+        
+        <div class="step">
+            <span class="step-number">1</span> Nel menu feedback, seleziona <span class="button-example">📝 Lascia un Feedback</span>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">2</span> Ti verrà mostrata una lista dei tuoi ordini confermati per cui non hai ancora lasciato un feedback. Seleziona il prodotto per cui desideri lasciare un feedback.
+            <div class="note">
+                <strong>Nota:</strong> Se non vedi alcun prodotto, significa che hai già lasciato un feedback per tutti i tuoi ordini confermati o che non hai ancora effettuato acquisti.
+            </div>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">3</span> Scegli la tua valutazione:
+            <div class="rating">
+                <div class="rating-positive">👍 Positivo</div>
+                <div class="rating-negative">👎 Negativo</div>
+            </div>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">4</span> Dopo aver selezionato la valutazione, puoi scegliere se:
+            <ul>
+                <li><span class="button-example">💬 Aggiungi Commento</span> - Per aggiungere un commento al tuo feedback</li>
+                <li><span class="button-example">✅ Invia Senza Commento</span> - Per inviare il feedback senza commento</li>
+            </ul>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">5</span> Se scegli di aggiungere un commento, ti verrà chiesto di scrivere il tuo commento. Ricorda che il commento deve essere rispettoso e non contenere linguaggio offensivo.
+        </div>
+        
+        <div class="step">
+            <span class="step-number">6</span> Una volta inviato, il tuo feedback sarà in attesa di approvazione da parte degli amministratori. Riceverai una notifica quando il tuo feedback sarà stato approvato o rifiutato.
+        </div>
+        
+        <div class="note">
+            <strong>Importante:</strong> I commenti contenenti linguaggio offensivo o inappropriato verranno automaticamente rifiutati. Assicurati che il tuo commento sia rispettoso e costruttivo.
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Come Visualizzare i Feedback</h2>
+        <p>Puoi visualizzare i feedback lasciati da altri clienti per avere un'idea della qualità dei prodotti:</p>
+        
+        <div class="step">
+            <span class="step-number">1</span> Nel menu feedback, seleziona <span class="button-example">👀 Vedi tutti i Feedback</span>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">2</span> Ti verranno mostrati gli ultimi feedback approvati, con informazioni su:
+            <ul>
+                <li>Nome del prodotto</li>
+                <li>Username dell'utente che ha lasciato il feedback</li>
+                <li>Valutazione (positiva o negativa)</li>
+                <li>Eventuale commento</li>
+                <li>Prezzo del prodotto</li>
+                <li>Data del feedback</li>
+            </ul>
+        </div>
+        
+        <div class="feedback-example">
+            <p><span class="emoji">👍</span> <strong>Nome Prodotto</strong></p>
+            <p>👤 @username</p>
+            <p>💬 "Ottimo prodotto, consegna veloce e servizio impeccabile!"</p>
+            <p>💰 €XX.XX</p>
+            <p>📅 01/01/2023</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">3</span> Puoi aggiornare la lista dei feedback selezionando <span class="button-example">🔄 Aggiorna</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Stati dei Feedback</h2>
+        <p>Dopo aver inviato un feedback, questo può trovarsi in uno dei seguenti stati:</p>
+        
+        <h3>In Attesa <span class="status status-pending">In attesa</span></h3>
+        <p>Il tuo feedback è stato inviato ma è ancora in attesa di approvazione da parte degli amministratori. Non sarà visibile agli altri utenti fino a quando non verrà approvato.</p>
+        
+        <h3>Approvato <span class="status status-approved">Approvato</span></h3>
+        <p>Il tuo feedback è stato approvato dagli amministratori ed è ora visibile a tutti gli utenti. Riceverai una notifica quando il tuo feedback viene approvato.</p>
+        
+        <h3>Rifiutato <span class="status status-rejected">Rifiutato</span></h3>
+        <p>Il tuo feedback è stato rifiutato dagli amministratori, probabilmente perché non rispetta le linee guida. Riceverai una notifica quando il tuo feedback viene rifiutato, con la possibilità di inviarne uno nuovo.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Promemoria per i Feedback</h2>
+        <p>Per garantire che tutti i clienti condividano la loro esperienza, il nostro sistema invia automaticamente dei promemoria per i feedback:</p>
+        
+        <div class="step">
+            <span class="step-number">1</span> <strong>Richiesta Iniziale:</strong> Dopo che un ordine viene confermato, riceverai un messaggio che ti invita a lasciare un feedback.
+        </div>
+        
+        <div class="step">
+            <span class="step-number">2</span> <strong>Promemoria:</strong> Se non lasci un feedback, riceverai fino a 3 promemoria (uno al giorno) che ti ricordano di condividere la tua esperienza.
+        </div>
+        
+        <div class="note">
+            <strong>Nota:</strong> I promemoria si interrompono automaticamente una volta che hai lasciato un feedback o dopo il terzo promemoria.
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Linee Guida per i Feedback</h2>
+        <p>Per garantire che i feedback siano utili per tutti, ti chiediamo di seguire queste linee guida:</p>
+        
+        <ul>
+            <li><strong>Sii onesto:</strong> Condividi la tua vera esperienza con il prodotto.</li>
+            <li><strong>Sii rispettoso:</strong> Non utilizzare linguaggio offensivo o inappropriato.</li>
+            <li><strong>Sii specifico:</strong> Menziona aspetti specifici del prodotto o del servizio che hai apprezzato o che potrebbero essere migliorati.</li>
+            <li><strong>Sii costruttivo:</strong> Se hai avuto un'esperienza negativa, spiega il perché e suggerisci possibili miglioramenti.</li>
+        </ul>
+        
+        <div class="note">
+            <strong>Importante:</strong> I feedback contenenti parole offensive o inappropriate verranno automaticamente rifiutati. Il sistema filtra automaticamente parole come parolacce, bestemmie e linguaggio offensivo.
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Domande Frequenti</h2>
+        
+        <h3>Posso modificare un feedback dopo averlo inviato?</h3>
+        <p>No, una volta inviato un feedback non è possibile modificarlo. Puoi solo attendere che venga approvato o rifiutato dagli amministratori.</p>
+        
+        <h3>Quanto tempo ci vuole per l'approvazione di un feedback?</h3>
+        <p>I feedback vengono generalmente approvati entro 24-48 ore dall'invio. In caso di elevato volume di feedback, potrebbe essere necessario più tempo.</p>
+        
+        <h3>Perché il mio feedback è stato rifiutato?</h3>
+        <p>I feedback possono essere rifiutati se contengono linguaggio offensivo, informazioni personali, contenuti non pertinenti o se violano in altro modo le nostre linee guida.</p>
+        
+        <h3>Posso vedere tutti i feedback che ho lasciato?</h3>
+        <p>Al momento non è disponibile una funzione per visualizzare tutti i feedback che hai lasciato. Puoi vedere solo i feedback approvati nella sezione "Vedi tutti i Feedback".</p>
+    </div>
+    
+    <footer>
+        <p>© 2023 ItaliaMaxShop - Guida alla Gestione dei Feedback</p>
+        <p>Per assistenza, contatta il nostro supporto tramite il bot Telegram.</p>
+    </footer>
+</body>
+</html>
